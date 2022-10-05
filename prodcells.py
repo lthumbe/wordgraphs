@@ -95,7 +95,7 @@ class PCELL():
             H.add_nodes_from(nodes)
             H.add_edges_from(G.edges())
             # Estimate size of figure with length of word and number of layers
-            plt.figure(figsize=(2*max_layer + 0.3*wordlen, 1.5*num_layers))
+            plt.figure(figsize=(2*max_layer + 0.35*wordlen, 1.5*num_layers))
             pos = nx.multipartite_layout(H, subset_key=layer_by, 
                                          align = 'horizontal', scale=2)
             
